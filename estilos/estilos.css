@@ -1,0 +1,296 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Bebas Neue", cursive;
+}
+h1 {
+  font-size: 2.5em;
+}
+h2 {
+  font-size: 1.5em;
+}
+h3 {
+  font-size: 2em;
+}
+h4 {
+  margin: 0;
+}
+h5 {
+  margin: 0;
+}
+ul {
+  list-style: none;
+}
+p {
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
+.menu {
+  font-family: "Bebas Neue", cursive;
+  color: #efe3f5;
+  width: 100%;
+  background-color: #efe3f5;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 16px 8px;
+}
+
+.logo {
+  width: 150px;
+  white-space: nowrap;
+  justify-content: center;
+}
+
+.productos {
+  font-family: "Bebas Neue", cursive;
+}
+
+footer {
+  text-align: center;
+  font-family: "Bebas Neue", cursive;
+  background-color: #efe3f5;
+  
+  bottom: 0;
+ 
+  width: 100%;
+}
+
+.productos {
+  background-color: #efe3f5;
+}
+
+.productos-secondary {
+  font-family: "Bebas Neue", cursive;
+}
+
+.correo-electronico {
+  font-family: "Bebas Neue", cursive;
+  background-color: #efe3f5;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 10px 10px 32px 0;
+}
+.image-container {
+  position: relative;
+  align-items: center;
+  width: 33.33%;
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 980px) {
+  .image-container {
+    width: 50%;
+  }
+}
+
+@media (max-width: 670px) {
+  .image-container {
+    width: 100%;
+  }
+}
+.image-description-container {
+  position: absolute;
+  bottom: 24px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  z-index: 4;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-description {
+  height: 60px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+section.product-section {
+  display: flex;
+  flex-direction: row;
+}
+@media (max-width: 900px) {
+  section.product-section {
+    flex-direction: column;
+  }
+}
+.filters {
+  width: 300px;
+  height: 600px;
+  box-shadow: 1px 6px 14px 8px rgb(0 0 0 / 20%);
+  border-radius: 40px;
+}
+
+@media (max-width: 900px) {
+  .filters {
+    margin: 0 16px;
+    width: 100%;
+    height: 250px;
+  }
+}
+.category-item {
+  margin-top: 24px;
+  font-weight: 500;
+  font-size: 24px;
+}
+.category-item:hover {
+  cursor: pointer;
+  color: violet;
+}
+
+.grid .image-container img {
+  width: 300px;
+  margin: 8px;
+  height: auto;
+  border-radius: 80px;
+}
+
+.grid .image-container img.product-section {
+  width: 245px;
+}
+
+.grid .image-container img:hover {
+  box-shadow: 1px 6px 14px 8px rgb(0 0 0 / 20%);
+  transform: scale(1);
+  transition: box-shadow 0.3s ease-in-out;
+}
+.tablas {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: space-around;
+}
+
+button {
+  font-size: 1, 5;
+  font-weight: bold;
+  padding: 10px 30px;
+  border-radius: 10px;
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  color: white;
+  background-color: violet;
+}
+
+button:hover {
+  color: gray;
+  background-color: #efe3ef;
+}
+
+.container {
+  max-width: 1400px;
+  margin: auto;
+}
+
+header .header-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .logo {
+  padding: 25px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+header .labelLogo {
+  font-weight: bold;
+  color: black;
+  font-size: 1.45em;
+}
+header .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header nav {
+  display: flex;
+
+  justify-content: flex-end;
+  text-align: center;
+}
+
+header a {
+  padding: 5px 12px;
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+
+header a:hover {
+  color: violet;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.divider {
+  width: 75%;
+  height: 1px;
+  background-color: rgb(182, 181, 181);
+  margin: 0 auto;
+}
+
+.category-list {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+  padding: 0%;
+}
+@media (max-width: 900px) {
+  .category-list {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+main {
+  position: relative;
+}
+
+div img.product-section-image {
+  border-radius: 40px;
+  width: 425px;
+}
+
+.description-product {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+}
+
+
+.product-image-container {
+  position: relative;
+  align-items: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+body{
+  height: 100vh;
+  margin:0;
+}
