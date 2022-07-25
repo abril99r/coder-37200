@@ -54,9 +54,9 @@ footer {
   text-align: center;
   font-family: "Bebas Neue", cursive;
   background-color: #efe3f5;
-  
+
   bottom: 0;
- 
+
   width: 100%;
 }
 
@@ -66,11 +66,6 @@ footer {
 
 .productos-secondary {
   font-family: "Bebas Neue", cursive;
-}
-
-.correo-electronico {
-  font-family: "Bebas Neue", cursive;
-  background-color: #efe3f5;
 }
 
 .grid {
@@ -146,6 +141,8 @@ section.product-section {
 .category-item:hover {
   cursor: pointer;
   color: violet;
+  transition: color 0.1s;
+
 }
 
 .grid .image-container img {
@@ -279,9 +276,7 @@ div img.product-section-image {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-
 }
-
 
 .product-image-container {
   position: relative;
@@ -290,7 +285,33 @@ div img.product-section-image {
   display: flex;
   justify-content: center;
 }
-body{
+body {
   height: 100vh;
-  margin:0;
+  margin: 0;
+}
+
+.formulario {
+  position: relative;
+  align-items: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.registrate {
+  text-align: center;
+}
+
+.correo-electronico {
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  width: 400px;
+  margin: auto;
+  font-family: "Bebas Neue", cursive;
+  
+}
+.border-registro {
+  margin-top: 100px;
+  border: 4px solid black;
+  padding: 16px;
 }
